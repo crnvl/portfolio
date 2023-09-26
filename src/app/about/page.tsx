@@ -21,8 +21,8 @@ export default function About() {
               Hello there! My name is <a className="text-secondary">Luna</a>. I
               embarked on my journey in the world of software development when I
               was just <a className="text-secondary">11 years old</a>.
-              Self-taught and fueled by curiosity, I've been continuously honing
-              my coding skills ever since. Currently, I'm on the path to earning
+              Self-taught and fueled by curiosity, I&apos;ve been continuously honing
+              my coding skills ever since. Currently, I&apos;m on the path to earning
               my{" "}
               <a className="text-accent">
                 high school diploma in mathematics and computer science
@@ -31,7 +31,7 @@ export default function About() {
               endeavors.
               <br />
               <br />
-              Soon, I'll be taking my passion for coding to the next level by
+              Soon, I&apos;ll be taking my passion for coding to the next level by
               studying{" "}
               <a className="text-info">computer science at university</a>. The
               prospect of diving deeper into this ever-evolving field truly
@@ -40,21 +40,21 @@ export default function About() {
               <br />
               In addition to my academic pursuits, I am also a{" "}
               <a className="text-warning">co-founder</a> of a software company
-              called namespace.media. Through our efforts, we've built products
+              called namespace.media. Through our efforts, we&apos;ve built products
               that have touched the lives of{" "}
-              <a className="text-accent">over 8 million users</a>. It's been a
+              <a className="text-accent">over 8 million users</a>. It&apos;s been a
               challenging but immensely rewarding experience that has broadened
               my perspective on the impact of technology.
               <br />
               <br />
               Beyond the realm of code and algorithms, I have a creative side
               that I love to explore in my free time. You can find me under the
-              alias "sofv," publishing music that's close to my heart. I also
+              alias &quotsofv&quot, publishing music that&apos;s close to my heart. I also
               dabble in digital art, using technology as a canvas to express my
               thoughts and emotions.
               <br />
               <br />
-              I'm humbled by the opportunities that have come my way, and I'm
+              I&apos;m humbled by the opportunities that have come my way, and I&apos;m
               excited to continue my journey, pushing boundaries, and making a
               meaningful impact in the world of technology.
             </p>
