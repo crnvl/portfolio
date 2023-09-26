@@ -132,7 +132,7 @@ export default function Portfolio() {
             <div>
               Java{" "}
               <progress
-                className="progress progress-info w-56"
+                className="progress progress-info w-44"
                 value="97"
                 max="100"
               ></progress>
@@ -140,7 +140,7 @@ export default function Portfolio() {
             <div>
               TypeScript{" "}
               <progress
-                className="progress progress-primary w-56"
+                className="progress progress-primary w-44"
                 value="95"
                 max="100"
               ></progress>
@@ -148,7 +148,7 @@ export default function Portfolio() {
             <div>
               Rust{" "}
               <progress
-                className="progress progress-secondary w-56"
+                className="progress progress-secondary w-44"
                 value="76"
                 max="100"
               ></progress>
@@ -156,7 +156,7 @@ export default function Portfolio() {
             <div>
               Python{" "}
               <progress
-                className="progress progress-success w-56"
+                className="progress progress-success w-44"
                 value="50"
                 max="100"
               ></progress>
@@ -164,7 +164,7 @@ export default function Portfolio() {
             <div>
               C#{" "}
               <progress
-                className="progress progress-accent w-56"
+                className="progress progress-accent w-44"
                 value="35"
                 max="100"
               ></progress>
@@ -172,7 +172,7 @@ export default function Portfolio() {
             <div>
               PHP{" "}
               <progress
-                className="progress progress-error w-56"
+                className="progress progress-error w-44"
                 value="15"
                 max="100"
               ></progress>
@@ -183,7 +183,7 @@ export default function Portfolio() {
             <div>
               express.js{" "}
               <progress
-                className="progress progress-warning w-56"
+                className="progress progress-warning w-44"
                 value="92"
                 max="100"
               ></progress>
@@ -191,7 +191,7 @@ export default function Portfolio() {
             <div>
               Next.js{" "}
               <progress
-                className="progress progress-info w-56"
+                className="progress progress-info w-44"
                 value="85"
                 max="100"
               ></progress>
@@ -199,7 +199,7 @@ export default function Portfolio() {
             <div>
               Actix{" "}
               <progress
-                className="progress w-56"
+                className="progress w-44"
                 value="81"
                 max="100"
               ></progress>
@@ -207,7 +207,7 @@ export default function Portfolio() {
             <div>
               Vue.js{" "}
               <progress
-                className="progress progress-secondary w-56"
+                className="progress progress-secondary w-44"
                 value="65"
                 max="100"
               ></progress>
@@ -215,7 +215,7 @@ export default function Portfolio() {
             <div>
               Solid.js{" "}
               <progress
-                className="progress progress-success w-56"
+                className="progress progress-success w-44"
                 value="45"
                 max="100"
               ></progress>
@@ -226,7 +226,7 @@ export default function Portfolio() {
             <div>
               MongoDB{" "}
               <progress
-                className="progress progress-info w-56"
+                className="progress progress-info w-44"
                 value="92"
                 max="100"
               ></progress>
@@ -234,7 +234,7 @@ export default function Portfolio() {
             <div>
               SQLite{" "}
               <progress
-                className="progress progress-primary w-56"
+                className="progress progress-primary w-44"
                 value="90"
                 max="100"
               ></progress>
@@ -242,7 +242,7 @@ export default function Portfolio() {
             <div>
               Redis{" "}
               <progress
-                className="progress progress-accent w-56"
+                className="progress progress-accent w-44"
                 value="56"
                 max="100"
               ></progress>
@@ -250,7 +250,7 @@ export default function Portfolio() {
             <div>
               PostgresQL{" "}
               <progress
-                className="progress progress-secondary w-56"
+                className="progress progress-secondary w-44"
                 value="49"
                 max="100"
               ></progress>
@@ -258,7 +258,7 @@ export default function Portfolio() {
             <div>
               rethinkDB{" "}
               <progress
-                className="progress w-56"
+                className="progress w-44"
                 value="35"
                 max="100"
               ></progress>
