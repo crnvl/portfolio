@@ -1,6 +1,14 @@
 import Footer from "@/components/footer";
 import Navbar from "@/components/navbar";
+import { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "~/portfolio",
+  description:
+    "Co-Founder of namespace.media, Rust & TypeScript enthusiast, and a lover of all things tech. I build high-performance server-side applications and successful products with over 8,000,000 users.",
+};
 
 export default function Portfolio() {
   return (
@@ -33,9 +41,11 @@ export default function Portfolio() {
         >
           <div className="card w-96 bg-base-100 shadow-xl">
             <figure>
-              <img
+              <Image
                 src="https://cdn.discordapp.com/attachments/689506185359130648/835977221369364520/logo.png?ex=6513e935&is=651297b5&hm=e1f52da20042f0e284f607bbc0f89970bd16f2c82cc7c6aa7e594f53dd8baf60&"
                 alt="Shoes"
+                width={1920}
+                height={1920}
               />
             </figure>
             <div className="card-body">
@@ -57,9 +67,11 @@ export default function Portfolio() {
           </div>
           <div className="card w-96 bg-base-100 shadow-xl">
             <figure>
-              <img
+              <Image
                 src="https://cdn.namespace.media/s/3Jf6D8Di5TwaMS3/download/LOGO_2.png"
                 alt="Shoes"
+                width={1920}
+                height={1920}
               />
             </figure>
             <div className="card-body">
@@ -86,7 +98,12 @@ export default function Portfolio() {
           </div>
           <div className="card w-96 bg-base-100 shadow-xl">
             <figure>
-              <img src="https://qwq.sh/vqs2to" alt="Shoes" />
+              <Image
+                src="https://qwq.sh/vqs2to"
+                alt="Shoes"
+                width={1920}
+                height={1920}
+              />
             </figure>
             <div className="card-body">
               <h2 className="card-title">

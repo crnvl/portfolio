@@ -1,6 +1,13 @@
 import Footer from "@/components/footer";
 import Navbar from "@/components/navbar";
+import { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "~/about",
+  description: "Co-Founder of namespace.media, Rust & TypeScript enthusiast, and a lover of all things tech. I build high-performance server-side applications and successful products with over 8,000,000 users.",
+};
 
 export default function About() {
   return (
@@ -57,25 +64,33 @@ export default function About() {
             className="flex flex-col items-start px-8 space-y-8"
           >
             <h1 className="text-4xl font-bold">Art gallery</h1>
-            <img
+            <Image
               src="https://cdna.artstation.com/p/assets/images/images/064/241/410/large/sofv-echo-chamber.jpg?1687442824"
               alt="Echo Chamber"
               className="rounded-xl"
+              width={1920}
+              height={1920}
             />
-            <img
+            <Image
               src="https://cdnb.artstation.com/p/assets/images/images/064/332/991/large/sofv-virtual.jpg?1687697576"
               alt="Echo Chamber"
               className="rounded-xl"
+              width={1920}
+              height={1920}
             />
-            <img
+            <Image
               src="https://cdnb.artstation.com/p/assets/images/images/064/455/867/large/sofv-voidprism.jpg?1687963534"
               alt="Echo Chamber"
               className="rounded-xl"
+              width={1920}
+              height={1920}
             />
-            <img
+            <Image
               src="https://cdnb.artstation.com/p/assets/images/images/065/599/077/large/sofv-nlightment.jpg?1690790585"
               alt="Echo Chamber"
               className="rounded-xl"
+              width={1920}
+              height={1920}
             />
           </div>
           <hr className="my-8" />

@@ -1,6 +1,12 @@
 import Footer from "@/components/footer";
 import Navbar from "@/components/navbar";
+import { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "~/home",
+  description: "Co-Founder of namespace.media, Rust & TypeScript enthusiast, and a lover of all things tech. I build high-performance server-side applications and successful products with over 8,000,000 users.",
+};
 
 export default function Home() {
   return (
