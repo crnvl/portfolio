@@ -2,10 +2,12 @@ import Footer from "@/components/footer";
 import Navbar from "@/components/navbar";
 import { Metadata } from "next";
 import Link from "next/link";
+import { useEffect } from "react";
 
 export const metadata: Metadata = {
   title: "~/home",
-  description: "Co-Founder of namespace.media, Rust & TypeScript enthusiast, and a lover of all things tech. I build high-performance server-side applications and successful products with over 8,000,000 users.",
+  description:
+    "Co-Founder of namespace.media, Rust & TypeScript enthusiast, and a lover of all things tech. I build high-performance server-side applications and successful products with over 8,000,000 users.",
 };
 
 export default function Home() {
@@ -36,13 +38,13 @@ export default function Home() {
               </p>
               <div className="space-x-4">
                 <Link className="btn btn-primary" href="/portfolio">
-                  <kbd className="kbd">1</kbd> Portfolio
+                  Portfolio
                 </Link>
                 <Link className="btn btn-secondary" href="/about">
-                  <kbd className="kbd">2</kbd> About me
+                  About me
                 </Link>
               </div>
-              <p className="text-xs py-2">
+              <p className="text-xs py-2 invisible md:visible">
                 View shortcuts with <kbd className="kbd">Ctrl</kbd> +{" "}
                 <kbd className="kbd">Q</kbd>
               </p>

@@ -4,7 +4,24 @@ import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 
 export default function Navbar() {
+  const toggleModal = () => {
+    const modal = document.getElementById(
+      "shortcuts-modal"
+    ) as HTMLDialogElement;
+    modal.showModal();
+  };
+
   const [theme, setTheme] = useState("light");
+  const [header, setHeader] = useState(
+    <>
+      <label
+        className="btn btn-ghost normal-case text-xl"
+        onClick={toggleModal}
+      >
+        luna@space
+      </label>
+    </>
+  );
 
   const toggleTheme = (event) => {
     // only trigger if click was from checkbox
@@ -23,7 +40,7 @@ export default function Navbar() {
   // implement keyboard shortcuts for switching pages
   const handleKeyDown = (event) => {
     console.log(event.key);
-    
+
     if (event.key === "0") {
       router.push("/");
     } else if (event.key === "1") {
@@ -38,18 +55,25 @@ export default function Navbar() {
   };
 
   useEffect(() => {
+    // if on mobile, set different header
+    if (window.innerWidth <= 768) {
+      setHeader(
+        <>
+          <label
+            className="btn btn-ghost normal-case text-xl"
+            onClick={() => router.push("/")}
+          >
+            luna@space
+          </label>
+        </>
+      );
+    }
+    
     document.addEventListener("keydown", handleKeyDown);
     return () => {
       document.removeEventListener("keydown", handleKeyDown);
     };
   }, []);
-
-  const toggleModal = () => {
-    const modal = document.getElementById(
-      "shortcuts-modal"
-    ) as HTMLDialogElement;
-    modal.showModal();
-  };
 
   return (
     <>
@@ -117,14 +141,7 @@ export default function Navbar() {
             </ul>
           </div>
         </div>
-        <div className="navbar-center">
-          <label
-            className="btn btn-ghost normal-case text-xl"
-            onClick={toggleModal}
-          >
-            luna@space
-          </label>
-        </div>
+        <div className="navbar-center">{header}</div>
         <div className="navbar-end">
           <label className="swap swap-rotate" onClick={toggleTheme}>
             {/* this hidden checkbox controls the state */}
