@@ -1,7 +1,4 @@
-FROM node:18-alpine
-
-RUN apk update && \
-    apk add --no-cache libc6-compat autoconf automake libtool make tiff jpeg zlib zlib-dev pkgconf nasm file gcc musl-dev
+FROM node:20.5.0
 
 ENV NODE_ENV=production
 ENV NEXT_TELEMETRY_DISABLED 1
@@ -11,7 +8,7 @@ COPY . .
 
 EXPOSE 3000
 
-RUN npm install
+RUN npm ci
 RUN npm run build
 
-ENTRYPOINT ["npx", "next", "start", "-p", "3000"]
+ENTRYPOINT ["npm", "run", "start"]
