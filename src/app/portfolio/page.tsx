@@ -39,7 +39,7 @@ export default function Portfolio() {
           id="projects"
           className="flex flex-col md:flex-row md:justify-center items-center px-8 gap-8"
         >
-          <div className="card w-96 bg-base-100 shadow-xl">
+          <div className="card w-72 md:w-96 bg-base-100 shadow-xl">
             <figure>
               <Image
                 src="https://cdn.discordapp.com/attachments/689506185359130648/835977221369364520/logo.png?ex=6513e935&is=651297b5&hm=e1f52da20042f0e284f607bbc0f89970bd16f2c82cc7c6aa7e594f53dd8baf60&"
@@ -51,7 +51,7 @@ export default function Portfolio() {
             <div className="card-body">
               <h2 className="card-title">
                 namespace.media
-                <div className="badge badge-secondary">Co-Founder</div>
+                <div className="badge badge-secondary invisible md:visible">Co-Founder</div>
               </h2>
               <p>Independent development studio founded in 2019.</p>
               <div className="card-actions justify-end">
@@ -65,7 +65,7 @@ export default function Portfolio() {
               </div>
             </div>
           </div>
-          <div className="card w-96 bg-base-100 shadow-xl">
+          <div className="card w-72 md:w-96 bg-base-100 shadow-xl">
             <figure>
               <Image
                 src="https://cdn.namespace.media/s/3Jf6D8Di5TwaMS3/download/LOGO_2.png"
@@ -77,7 +77,7 @@ export default function Portfolio() {
             <div className="card-body">
               <h2 className="card-title">
                 XP
-                <div className="badge badge-primary">+8 million users</div>
+                <div className="badge badge-primary invisible md:visible">+8 million users</div>
               </h2>
               <p>
                 Fully configurable level-system for Discord.
@@ -96,7 +96,7 @@ export default function Portfolio() {
               </div>
             </div>
           </div>
-          <div className="card w-96 bg-base-100 shadow-xl">
+          <div className="card w-72 md:w-96 bg-base-100 shadow-xl">
             <figure>
               <Image
                 src="https://qwq.sh/vqs2to"
@@ -108,7 +108,7 @@ export default function Portfolio() {
             <div className="card-body">
               <h2 className="card-title">
                 sound.wave
-                <div className="badge badge-accent">Coming Soon</div>
+                <div className="badge badge-accent invisible md:visible">Coming Soon</div>
               </h2>
               <p>Modern music streaming platform coming in 2024.</p>
               <div className="card-actions justify-end">
